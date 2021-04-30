@@ -68,7 +68,7 @@ class Image extends AbstractHelper
     public function resize(string $image, $width = null, $height = null): ?string
     {
         $path = $this->getPath($width, $height);
-        $absoluteImagePath = $this->mediaDirectory->getAbsolutePath(self::CATALOG_PRODUCT_DIR) . $image;
+        $absoluteImagePath = $this->mediaDirectory->getAbsolutePath(self::CATALOG_PRODUCT_DIR) . $image; $absoluteImagePath = $this->mediaDirectory->getAbsolutePath(self::CATALOG_PRODUCT_DIR) . $image;
         $resizedImagePath = $this->mediaDirectory->getAbsolutePath($path) . $image;
 
         if (!$this->fileExists($absoluteImagePath)) {
@@ -121,7 +121,7 @@ class Image extends AbstractHelper
     /**
      * @return string
      */
-    private function getMediaUrl(): string
+    private function getMediaUrl($test): string
     {
         try {
             return $this->storeManager->getStore()->getBaseUrl(UrlInterface::URL_TYPE_MEDIA);
@@ -129,4 +129,8 @@ class Image extends AbstractHelper
             return '';
         }
     }
+    
+    
 }
+
+
