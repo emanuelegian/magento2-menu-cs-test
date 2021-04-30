@@ -1,12 +1,14 @@
 ---
 name: Backend Coding Standard
-on: [ push, pull_request ]
+on: [ push, pull_request_target ]
 jobs:
   backend-lint:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
 
     - uses: shivammathur/setup-php@v2
       with:
