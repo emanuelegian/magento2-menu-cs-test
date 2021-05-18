@@ -1,5 +1,5 @@
 ---
-name: Backend Coding Standard
+name: Backend Coding Standard (PR)
 on:
     pull_request_target:
         types: [labeled]
