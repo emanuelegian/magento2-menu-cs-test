@@ -2,6 +2,8 @@
 [![Packagist](https://img.shields.io/packagist/dt/snowdog/module-menu?style=for-the-badge)](https://packagist.org/packages/snowdog/module-menu)
 [![Packagist](https://img.shields.io/packagist/dm/snowdog/module-menu?style=for-the-badge)](https://packagist.org/packages/snowdog/module-menu)
 
+# THIS REPOSITORY IS JUST FOR INTERNAL TEST, PLEASE NOT USE IT NEITHER FORK IT. THANKS YOU!
+
 # Magento 2 Menu
 Provides powerful menu editor to replace category based menus in Magento 2.
 
