@@ -6,9 +6,9 @@
 
         <div class="admin__field-control control">
             <treeselect
+                :options="optionsTree"
                 v-if="isTree"
                 v-model="selected"
-                :options="optionsTree"
                 :placeholder="placeholder"
                 :default-expand-level="1"
                 :clearable="false"
