@@ -1,4 +1,2 @@
 <?php
 // comment here
-die();
-
