@@ -12,6 +12,13 @@ jobs:
       image: docker.io/davidalger/php:7.4
 
     steps:
+    
+      - name: Remove labels
+        uses: andymckay/labeler@master
+        with:
+            remove-labels: "need is safe review"
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
+            
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
